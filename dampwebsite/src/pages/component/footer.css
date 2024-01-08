@@ -1,0 +1,13 @@
+
+.footer_main {
+    height: 10vh;
+    width: 100%;
+    background-color: #031437;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_main p{
+    color: white;
+}

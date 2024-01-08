@@ -1,0 +1,59 @@
+/* body {
+    overflow: hidden;
+} */
+
+.course_main {
+    display: flex;
+}
+
+.coursename_container{
+    overflow-y: auto; 
+    width: 20%;
+    height: 90vh; 
+    border: 1px solid #ccc; 
+}
+.review_container {
+    width: 100%;
+    overflow-y: auto;
+    height: 90vh; 
+    padding-left: 3%;
+    border: 1px solid #ccc;
+}
+
+
+
+/* coursename container  */
+
+
+.courseName {
+    padding-top: 6%;
+    background-color: #FFFDFA;
+}
+
+.course_data {
+    margin-left: 10%;
+}
+
+.course_line {
+    height: 1.6px;
+    width: 90%;
+    margin-top: 1.5%;
+    background-color: #EDEBE7;
+}
+
+.course_data p {
+    font-size: 1rem;
+    font-weight: 650;
+}
+
+.course_data ul {
+    margin-left: 2%;
+}
+
+.course_data ul li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #7E7F7D;
+    padding-top: 5%;
+}
