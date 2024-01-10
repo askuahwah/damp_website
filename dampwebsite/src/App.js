@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Course from "./pages/course/Course";
 import About from "./pages/about/AboutIndex";
-import Faaqs from "./pages/explore/Explore";
-import Link from "./pages/importantLink/Link";
+import Faaqs from "./pages/faaqs/Faaqs";
 import Explore from "./pages/explore/Explore";
 import Navbar from "./pages/component/Navbar";
 
@@ -20,7 +19,6 @@ function App() {
           <Route exact path="/coursereview" element={<Course />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/faaqs" element={<Faaqs />} />
-          <Route exact path="/link" element={<Link />} />
           <Route exact path="/explore" element={<Explore />} />
         </Routes>
       </Router>

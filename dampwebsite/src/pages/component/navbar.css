@@ -1,13 +1,10 @@
 nav {
     height: auto;
     width: 100%;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding: 3vh 0;
     display: flex;
     justify-content: center;
-    /* background-color: #9f7cde; */
     background-color: #031437;
-
 }
 
 .navbar_text {
@@ -22,14 +19,56 @@ nav a {
     font-size: 1rem;
 }
 
-nav a:hover {
-    color: white;
-}
-
+nav a:hover,
 nav a.active {
     color: white;
 }
 
 .icon {
     margin-left: 5px;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-dropdown p {
+    color: grey;
+    padding-left: 2vh;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e0e0f4;
+    min-width: 30vh;
+    z-index: 1;
+    border-radius: 1vh;
+    margin-top: 10%;
+    padding: 15%
+}
+
+.dropdown-content p {
+    color: black;
+    font-weight: 400;
+    
+}
+
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.important {
+    /* Additional styling for .important class if needed */
+}
+
+.nav-dropdown:hover .dropdown-content {
+    display: block;
 }

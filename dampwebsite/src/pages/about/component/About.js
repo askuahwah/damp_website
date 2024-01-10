@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import style from "../component/../about.module.css";
-import data from "./photodata";
+import data from "../../../data/photodata";
 
 const About = () => {
   const redirectToInstagram = (instagramId) => {
