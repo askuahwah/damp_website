@@ -3,8 +3,13 @@
 
 
 .faqs_main{
-    margin: 3%;
-    width: 60%;
+    margin: 2%;
+    padding: 2%;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 2vh;
+    background-color: #E0E5EC;
+    box-shadow:  8px 8px 16px #979da7, -8px -8px 16px #ffffff;  
 }
 
 .faqs_main_text{
@@ -45,7 +50,7 @@
     width: 100%;
     padding: 3%;
     border-radius: 2vh;
-    background: white; 
+    background-color: #E0E5EC;
     box-shadow:  8px 8px 16px #979da7, -8px -8px 16px #ffffff;
 }
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInstagram, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram, faLinkedin, faTwitter, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import style from "../component/../about.module.css";
 import data from "../../../data/photodata";
 
-const About = () => {
+const FrontCard = () => {
   const redirectToInstagram = (instagramId) => {
     window.open(`https://www.instagram.com/${instagramId}/`, "_blank");
   };
@@ -35,7 +35,7 @@ const About = () => {
                   className={style.instagram_id}
                   onClick={() => redirectToInstagram(profile.instagramId)}
                 >
-                  <FontAwesomeIcon icon={faInstagram} size="2x" />
+                  <FontAwesomeIcon icon={faWhatsapp} size="2x" />
                 </p>
                 <p
                   className={style.linkedin_link}
@@ -59,4 +59,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default FrontCard;

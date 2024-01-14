@@ -1,12 +1,13 @@
 import React from 'react'
 import style from "./about.module.css";
-import About from './component/About';
+import FrontCard from './component/FrontCard';
 import Contact from './component/Contact';
+import BackCard from './component/BackCard';
 
 const AboutIndex = () => {
   return (
     <div>
-      <div><About/></div>
+      <div><FrontCard/></div>
       <div><Contact/></div>
     </div>
   )

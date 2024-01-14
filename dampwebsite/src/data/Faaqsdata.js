@@ -41,6 +41,22 @@ const faqsData = [
     question: "Can I use Lorem Ipsum for commercial purposes?",
     answer: "Yes, you can use Lorem Ipsum for commercial purposes. It is free to use for any purpose, including commercial use.",
   },
+  {
+    id: 11,
+    question: "Can I use Lorem Ipsum for commercial purposes?",
+    answer: "Yes, you can use Lorem Ipsum for commercial purposes. It is free to use for any purpose, including commercial use.",
+  },
+  {
+    id: 9,
+    question: "Can I use Lorem Ipsum for commercial purposes?",
+    answer: "Yes, you can use Lorem Ipsum for commercial purposes. It is free to use for any purpose, including commercial use.",
+  },
+  {
+    id: 10,
+    question: "Can I use Lorem Ipsum for commercial purposes?",
+    answer: "Yes, you can use Lorem Ipsum for commercial purposes. It is free to use for any purpose, including commercial use.",
+  },
+
 
 ];
 

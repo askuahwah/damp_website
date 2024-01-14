@@ -1,8 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import style from "../course.module.css";
+import SecondCourse from "../../../data/CourseReviewData/Second";
+import ThirdCourse from "../../../data/CourseReviewData/Third";
+import FourthCourse from "../../../data/CourseReviewData/Fourth";
+import InstituteElective from "../../../data/CourseReviewData/I";
+import DepartmentElective from "../../../data/CourseReviewData/D";
+import CourseReview from './CourseReview';
 
 const Coursename = () => {
-  const first = ["CS 101", "CS 101", "CS 101", "CS 101", "CS 101", "CS 101", "CS 101"];
+  const uniqueCourseCodes = new Set();
+
+  const [selectedCourse, setSelectedCourse] = useState(null);
+
+  const handleCourseCodeClick = (courseCode) => {
+    const selectedCourseData = findCourseData(courseCode);
+    setSelectedCourse(selectedCourseData);
+  };
+
+  const findCourseData = (courseCode) => {
+    const allCourses = [...SecondCourse, ...ThirdCourse, ...FourthCourse, ...InstituteElective, ...DepartmentElective];
+    return allCourses.find((course) => course["Course Code"] === courseCode);
+  };
 
   return (
     <div className={style.courseName}>
@@ -11,45 +29,70 @@ const Coursename = () => {
           <p>Second Year course</p>
           <div className={style.course_line}></div>
           <ul>
-            {first.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
+            {SecondCourse.map((review, index) => {
+              const courseCode = review["Course Code"];
+              if (!uniqueCourseCodes.has(courseCode)) {
+                uniqueCourseCodes.add(courseCode);
+                return <li key={index} onClick={() => handleCourseCodeClick(courseCode)}>{courseCode}</li>;
+              }
+              return null;
+            })}
           </ul>
         </div>
         <div className={style.course_data}>
           <p>Third Year course</p>
           <div className={style.course_line}></div>
           <ul>
-            {first.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
+            {ThirdCourse.map((review, index) => {
+              const courseCode = review["Course Code"];
+              if (!uniqueCourseCodes.has(courseCode)) {
+                uniqueCourseCodes.add(courseCode);
+                return <li key={index} onClick={() => handleCourseCodeClick(courseCode)}>{courseCode}</li>;
+              }
+              return null;
+            })}
           </ul>
         </div>
         <div className={style.course_data}>
-          <p>Fourth Year course</p>
+          <p>Department Elective</p>
           <div className={style.course_line}></div>
           <ul>
-            {first.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
+            {DepartmentElective.map((review, index) => {
+              const courseCode = review["Course Code"];
+              if (!uniqueCourseCodes.has(courseCode)) {
+                uniqueCourseCodes.add(courseCode);
+                return <li key={index} onClick={() => handleCourseCodeClick(courseCode)}>{courseCode}</li>;
+              }
+              return null;
+            })}
           </ul>
         </div>
         <div className={style.course_data}>
-          <p>Institute Year course</p>
+          <p>Fourth course</p>
           <div className={style.course_line}></div>
           <ul>
-            {first.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
+            {FourthCourse.map((review, index) => {
+              const courseCode = review["Course Code"];
+              if (!uniqueCourseCodes.has(courseCode)) {
+                uniqueCourseCodes.add(courseCode);
+                return <li key={index} onClick={() => handleCourseCodeClick(courseCode)}>{courseCode}</li>;
+              }
+              return null;
+            })}
           </ul>
         </div>
         <div className={style.course_data}>
-          <p>Department Elective    </p>
+          <p>Third Year course</p>
           <div className={style.course_line}></div>
           <ul>
-            {first.map((course, index) => (
-              <li key={index}>{course}</li>
-            ))}
+            {ThirdCourse.map((review, index) => {
+              const courseCode = review["Course Code"];
+              if (!uniqueCourseCodes.has(courseCode)) {
+                uniqueCourseCodes.add(courseCode);
+                return <li key={index} onClick={() => handleCourseCodeClick(courseCode)}>{courseCode}</li>;
+              }
+              return null;
+            })}
           </ul>
         </div>
       </div>

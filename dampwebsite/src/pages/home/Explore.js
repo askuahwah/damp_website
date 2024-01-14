@@ -9,6 +9,7 @@ const Explore = () => {
         <div className={style.explore_course_container_detail}></div>
         <div className={style.explore_course_container_detail}></div>
         <div className={style.explore_course_container_detail}></div>
+        <div className={style.explore_course_container_detail}></div>
     </div>
     </div>
   )
