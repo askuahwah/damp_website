@@ -2,6 +2,7 @@ const minor = [
   {
     tag: "M",
     "Name:": "Hrithik Mhatre",
+    "Course Code": "CE 213",
     "Expected Year of Graduation:": 2025,
     "Course Code and Name: (for eg. CE324-Engineering Law)": "CS213",
     "Professor who took the course:": "Prof. Milind Sohani",
@@ -26,6 +27,7 @@ const minor = [
   {
     tag: "M",
     "Name:": "Harshit Porwal ",
+    "Course Code": "CE 228",
     "Expected Year of Graduation:": 2025,
     "Course Code and Name: (for eg. CE324-Engineering Law)": "CS228",
     "Professor who took the course:": "Krishna",
@@ -96,3 +98,5 @@ const minor = [
     "What was the grading statistics when you took the course?": "Check ASC",
   },
 ];
+
+export default minor;

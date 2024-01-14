@@ -4,19 +4,22 @@
 
 .course_main {
     display: flex;
+    /* flex-direction: row; */
 }
 
-.coursename_container{
+.courseName{
     overflow-y: auto; 
     width: 20%;
     height: 90vh; 
     border: 1px solid #ccc; 
 }
 .review_container {
+    background-color: #fff;
     width: 100%;
     overflow-y: auto;
     height: 90vh; 
-    padding-left: 3%;
+    padding: 2%;
+    padding-top: 1%;
     border: 1px solid #ccc;
 }
 
@@ -26,7 +29,7 @@
 
 
 .courseName {
-    padding-top: 6%;
+    padding-top: 1%;
     background-color: #FFFDFA;
 }
 
@@ -56,4 +59,22 @@
     font-weight: 600;
     color: #7E7F7D;
     padding-top: 5%;
+}
+
+/* review container */
+
+.review_a {
+    background-color: #DFECF4; /* Background color for light mode */
+    /* box-shadow: 5px 5px 10px #DFECF4, -5px -5px 10px #DFECF4; Neumorphic box shadow */
+    padding: 15px; /* Add padding for a softer look */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.coursereview_main_heading {
+    font-size: 2.3rem;
+    font-weight: 600;
+    background-image: radial-gradient(ellipse, #553c9a, #ee4b2b);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
