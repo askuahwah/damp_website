@@ -51,6 +51,7 @@ const FrontCard = () => {
                 </p>
               </div>
               <p className={style.email_id}>{profile.emailId}</p>
+              <p>Hailing from Varanasi (a city older than history itself), an avid reader, loves movies, music, comedy and sports, I am an enthusiast, set out to explore.</p>
             </div>
           </div>
         ))}

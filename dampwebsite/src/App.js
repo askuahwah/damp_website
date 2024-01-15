@@ -6,20 +6,20 @@ import About from "./pages/about/AboutIndex";
 import Faaqs from "./pages/faaqs/Faaqs";
 import Explore from "./pages/explore/Explore";
 import Navbar from "./pages/component/Navbar";
+import EeriPage from "./pages/eeri/Eeri";
 
 function App() {
-
-
   return (
     <>
       <Router>
-      <Navbar/>
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/coursereview" element={<Course />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/faaqs" element={<Faaqs />} />
           <Route exact path="/explore" element={<Explore />} />
+          <Route exact path="/eeripage" element={<EeriPage />} />
         </Routes>
       </Router>
     </>

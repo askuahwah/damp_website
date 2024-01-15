@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <NavLink to="/faaqs">Faaqs</NavLink>
+      <NavLink to="/faaqs">FAQ's</NavLink>
       <div className="nav-dropdown">
         <p onClick={toggleImportantDropdown}>
           Important Link
