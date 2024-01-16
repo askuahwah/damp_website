@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./course.module.css";
+import style from "../course.module.css";
 
 const CourseReview = ({ selectedCourse }) => {
   return (

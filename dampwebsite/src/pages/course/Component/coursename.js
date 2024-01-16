@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./course.module.css";
+import style from "../course.module.css";
 import SecondCourse from "../../../data/CourseReviewData/Second";
 import ThirdCourse from "../../../data/CourseReviewData/Third";
 import FourthCourse from "../../../data/CourseReviewData/Fourth";

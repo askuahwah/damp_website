@@ -3,8 +3,10 @@ nav {
     width: 100%;
     padding: 3vh 0;
     display: flex;
-    justify-content: center;
-    background-color: #031437;
+    justify-content: space-evenly;
+    padding-right: 10%;
+    padding-left: 10%;
+    background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,17 +15,19 @@ nav {
 }
 
 nav a {
-    padding-left: 2vh;
+    padding: 2px 10px 3px;
     color: grey;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
+    border-radius: 5px;
 }
 
 nav a:hover,
 nav a.active {
-    color: white;
-    background-color: blue;
+    color: black;
+    background-color: #88D8FB;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -32,6 +36,8 @@ nav a.active {
 
 .nav-dropdown {
     position: relative;
+    top: 0px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .nav-dropdown p {
@@ -44,20 +50,23 @@ nav a.active {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #e0e0f4;
-    min-width: 30vh;
+    background-color: white;
+    min-width: 35vh;
     z-index: 1;
-    border-radius: 1vh;
-    margin-top: 10%;
-    padding: 15%
+    margin-top: 7%;
+    /* border-radius: 16px;  */
+    box-shadow: 
+      6px 6px 12px rgba(0, 0, 0, 0.1),
+      -6px -6px 12px rgba(255, 255, 255, 0.8); 
 }
 
-.dropdown-content p {
+
+
+.dropdown-content a {
+    display: flex;
     color: black;
     font-weight: 400;
-    
 }
-
 
 .visible {
     display: block;
@@ -68,9 +77,14 @@ nav a.active {
 }
 
 .important {
-    /* Additional styling for .important class if needed */
+    margin-top: 5%;
 }
 
 .nav-dropdown:hover .dropdown-content {
     display: block;
+    transform: translateY(5px);
+}
+
+.nav-dropdown:hover .dropdown-content a:hover {
+    background-color: #c1c1e0;
 }

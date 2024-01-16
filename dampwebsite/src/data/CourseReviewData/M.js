@@ -51,6 +51,7 @@ const minor = [
   {
     tag: "M",
     "Name:": "Hrithik Mhatre",
+    "Course Code": "CE 218",
     "Expected Year of Graduation:": 2025,
     "Course Code and Name: (for eg. CE324-Engineering Law)":
       "CS218-Design and Analysis of Algorithms",
@@ -76,6 +77,7 @@ const minor = [
   {
     tag: "M",
     "Name:": "Ayush Singh",
+    "Course Code": "CS 224",
     "Expected Year of Graduation:": 2026,
     "Course Code and Name: (for eg. CE324-Engineering Law)":
       "CS224- Computer Networks",
