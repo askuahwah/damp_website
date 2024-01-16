@@ -3,7 +3,6 @@ import style from "./home.module.css";
 import BrowseCourse from "./BrowseCourse";
 import Explore from "./Explore";
 import Youtube from "./Youtube";
-import Footer from "../component/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import faqsDataHome from "../../data/Faaqsdata";
@@ -75,7 +74,6 @@ const HOME = () => {
           <Youtube />
         </div>
       </div>
-      <div><Footer/></div>
     </>
   );
 };

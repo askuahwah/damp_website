@@ -7,6 +7,9 @@ import Faaqs from "./pages/faaqs/Faaqs";
 import Explore from "./pages/explore/Explore";
 import Navbar from "./pages/component/Navbar";
 import EeriPage from "./pages/eeri/Eeri";
+import HigherStudies from "./pages/HigherStudies/HigherStudies";
+import Footer from "./pages/component/footer";
+import InternationExposer from "./pages/InternationExposer/InternationExposer";
 
 function App() {
   return (
@@ -20,7 +23,10 @@ function App() {
           <Route exact path="/faaqs" element={<Faaqs />} />
           <Route exact path="/explore" element={<Explore />} />
           <Route exact path="/eeripage" element={<EeriPage />} />
+          <Route exact path="/higherstudies" element={<HigherStudies />} />
+          <Route exact path="/internationexposer" element={<InternationExposer />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

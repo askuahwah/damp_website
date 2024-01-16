@@ -10,4 +10,10 @@
 
 .footer_main p{
     color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer_main p span {
+    color: #6c757d;
 }

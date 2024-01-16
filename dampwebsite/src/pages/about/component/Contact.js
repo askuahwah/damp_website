@@ -33,6 +33,7 @@ const Contact = () => {
 
   return (
     <div className={style.contact_main}>
+      <div className={style.contact_main_heading}><p>Contact us</p></div>
       <div className={style.contact_main_text}>
         <p>
           You can write to us at{" "}
