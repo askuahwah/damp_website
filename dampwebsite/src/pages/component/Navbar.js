@@ -23,7 +23,7 @@ const Navbar = () => {
   const hideExploreDropdown = () => {
     exploreDropdownTimerRef.current = setTimeout(() => {
       setExploreDropdownVisible(false);
-    }, 150); // Adjust the delay as needed (in milliseconds)
+    }, 150);
   };
 
   const showImportantDropdown = () => {
@@ -34,7 +34,7 @@ const Navbar = () => {
   const hideImportantDropdown = () => {
     importantDropdownTimerRef.current = setTimeout(() => {
       setImportantDropdownVisible(false);
-    }, 150); // Adjust the delay as needed (in milliseconds)
+    }, 150);
   };
 
   const showCourseReviewDropdown = () => {
@@ -45,8 +45,56 @@ const Navbar = () => {
   const hideCourseReviewDropdown = () => {
     courseReviewDropdownTimerRef.current = setTimeout(() => {
       setCourseReviewDropdownVisible(false);
-    }, 150); // Adjust the delay as needed (in milliseconds)
+    }, 150);
   };
+
+  const handleCircularNavigation = () => {
+    window.open("https://www.iitb.ac.in/newacadhome/circular.jsp", "_blank");
+  };
+
+  const handleHolidayNavigation = () => {
+    window.open(
+      "https://www.iitb.ac.in/en/about-iit-bombay/iit-bombay-holidays-list",
+      "_blank"
+    );
+  };
+
+  const handleTimeTableNavigation = () => {
+    window.open("https://www.iitb.ac.in/newacadhome/timetable.jsp", "_blank");
+  };
+
+  const handleAcademicCalendarNavigation = () => {
+    window.open(
+      "https://www.iitb.ac.in/newacadhome/toacadcalender.jsp",
+      "_blank"
+    );
+  };
+
+  const handleDepartmentWebsiteNavigation = () => {
+    window.open("https://www.civil.iitb.ac.in/", "_blank");
+  };
+
+  const handleUgCurriculumNavigation = () => {
+    window.open("https://www.civil.iitb.ac.in/GENERAL/ugdd.pdf", "_blank");
+  };
+
+  const handleCourseBookletNavigation = () => {
+    window.open(
+      "https://drive.google.com/file/d/1IoJ3qLBpsWafaLuci5hGq8d1vbmYfvwP/view",
+      "_blank"
+    );
+  };
+
+  const handleUgBookletNavigation = () => {
+    window.open(
+      "https://gymkhana.iitb.ac.in/~ugacademics/UGInfo.pdf",
+      "_blank"
+    );
+  };
+  
+  const handleIntershipBlogNavigatoin = () => {
+    window.open("https://drive.google.com/file/d/12LDC5v3Uw6CI_KmcCErC1kt3yHRm7iGJ/view","_blank")
+  }
 
   return (
     <nav>
@@ -58,10 +106,10 @@ const Navbar = () => {
         onMouseEnter={showCourseReviewDropdown}
         onMouseLeave={hideCourseReviewDropdown}
       >
-        <NavLink to="/coursereview">
+        <p>
           Course Review
           <FontAwesomeIcon className="icon" icon={faCaretDown} />
-        </NavLink>
+        </p>
         <div
           className={`dropdown-content ${
             courseReviewDropdownVisible ? "visible" : "hidden"
@@ -90,14 +138,13 @@ const Navbar = () => {
             exploreDropdownVisible ? "visible" : "hidden"
           }`}
         >
-          <a href="/">BTR & DD</a>
-          <a href="/eeripage">EERI</a>
-          <a href="/higherstudies">Higher Studies</a>
+          <a href="/btr&dd">BTR & DD</a>
           <a href="/internationexposer">Internation Exposer</a>
+          <a href="/higherstudies">Higher Studies</a>
         </div>
       </div>
 
-      <NavLink to="/faaqs">FAQ's</NavLink>
+      <NavLink to="/faaqs">FAQs</NavLink>
       <div
         className="nav-dropdown"
         onMouseEnter={showImportantDropdown}
@@ -112,18 +159,20 @@ const Navbar = () => {
             importantDropdownVisible ? "visible" : "hidden"
           }`}
         >
-          <a href="/https://www.iitb.ac.in/newacadhome/circular.jsp">Circular</a>
-          <a href="/https://www.iitb.ac.in/en/about-iit-bombay/iit-bombay-holidays-list">List of Holidays</a>
-          <a href="/https://www.iitb.ac.in/newacadhome/timetable.jsp">Time Tables</a>
-          <a href="/https://www.iitb.ac.in/newacadhome/toacadcalender.jsp">Academic Calendar</a>
-          <a href="/https://www.civil.iitb.ac.in/">Department Website</a>
-          <a href="/https://www.civil.iitb.ac.in/GENERAL/ugdd.pdf">UG Curriculum</a>
-          <a href="/https://drive.google.com/file/d/1IoJ3qLBpsWafaLuci5hGq8d1vbmYfvwP/view">Course Info Booklet</a>
-          <a href="/https://gymkhana.iitb.ac.in/~ugacademics/UGInfo.pdf">UG Info Booklet</a>
-          <a href="/https://drive.google.com/file/d/12LDC5v3Uw6CI_KmcCErC1kt3yHRm7iGJ/view">Internship Preparation Blog</a>
+          <p onClick={handleCircularNavigation}>Circular</p>
+          <p onClick={handleHolidayNavigation}>List of Holidays</p>
+          <p onClick={handleTimeTableNavigation}>Time Tables</p>
+          <p onClick={handleAcademicCalendarNavigation}>Academic Calendar</p>
+          <p onClick={handleDepartmentWebsiteNavigation}>Department Website</p>
+          <p onClick={handleUgCurriculumNavigation}>UG Curriculum</p>
+          <p onClick={handleCourseBookletNavigation}>Course Info Booklet</p>
+          <p onClick={handleUgBookletNavigation}>UG Info Booklet</p>
+          <p onClick={handleIntershipBlogNavigatoin}>
+            Internship Preparation Blog
+          </p>
         </div>
       </div>
-      <NavLink to="/about">About</NavLink>
+      <NavLink to="/about">About us</NavLink>
     </nav>
   );
 };

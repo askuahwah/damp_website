@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./home.module.css";
 import BrowseCourse from "./BrowseCourse";
-import Explore from "./Explore";
+import Explore from "./ExploreHome";
 import Youtube from "./Youtube";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown, faChevronUp } from "@fortawesome/free-solid-svg-icons";
