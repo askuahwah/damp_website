@@ -1,6 +1,8 @@
 import React from "react";
 import HigherStudiesContent from "../../../data/HigherStudiesData";
 import style from "../higherstudies.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const HigherPeople = () => {
   return (
@@ -15,7 +17,7 @@ const HigherPeople = () => {
               <td>Institution</td>
               <td>Admission Year</td>
               <td>Field</td>
-              <td>Specialization</td>
+              <td>Linkedin</td>
             </tr>
           </thead>
           <tbody>
@@ -26,7 +28,7 @@ const HigherPeople = () => {
                 <td>{profile.education.institution}</td>
                 <td>{profile.education.admission_year}</td>
                 <td>{profile.education.field}</td>
-                <td>{profile.education.specialization}</td>
+                <td>{profile.education.linkedin}<FontAwesomeIcon icon={faLinkedin} size="2x" /></td>
               </tr>
             ))}
           </tbody>

@@ -44,3 +44,63 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
                 -8px -8px 16px rgba(255, 255, 255, 0.8); 
 }
+
+
+/* Alakhblog */
+
+.alakhblog_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: justify;
+}
+
+/* PraptiBlog  */
+
+.praptiblog {
+    padding: 5%;
+    padding-top: 1%;
+}
+
+.praptiblog p {
+    padding-top: 1%;
+}
+
+.praptiblog h2 {
+    margin-top: 2%;
+}
+
+/* Swatiblog */
+
+.swatiblog_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Ishitablog */
+
+.ishita_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+/* Pintu Blog */
+
+.pintu_main {
+    padding: 5%;
+    padding-top: 1%;
+    text-align: justify;
+}
+
+.pintu_main h2 {
+    padding-top: 2%;
+}
+
+.pintu_main p {
+    padding-top: 1%;
+}

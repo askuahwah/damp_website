@@ -15,6 +15,14 @@ import Thirdreview from "./pages/course/Component/Thirdreview";
 import Fourthreview from "./pages/course/Component/Fourthreview";
 import Institutereview from "./pages/course/Component/Institutereview";
 import Btpdd from "./pages/Btp&dd/Btpdd";
+import RishiBlog from "./pages/InternationExposer/Component/RishiBlog";
+import AdityaBlog from "./pages/InternationExposer/Component/AdityaBlog";
+import ShashankBlog from "./pages/InternationExposer/Component/ShashankBlog";
+import AlakhBlog from "./pages/Btp&dd/Component/AlakhBlog";
+import IshitaBlog from "./pages/Btp&dd/Component/IshitaBlog";
+import PintuBlog from "./pages/Btp&dd/Component/PintuBlog";
+import SwastiBlog from "./pages/Btp&dd/Component/SwastiBlog";
+import PraptiBlog from "./pages/Btp&dd/Component/PraptiBlog";
 
 function App() {
   return (
@@ -39,6 +47,14 @@ function App() {
           <Route exact path="/explore" element={<Explore />} />
           <Route exact path="/higherstudies" element={<HigherStudies />} />
           <Route exact path="/btr&dd" element={<Btpdd />} />
+          <Route exact path="/praptiblog" element={<PraptiBlog />} />
+          <Route exact path="/swastiblog" element={<SwastiBlog />} />
+          <Route exact path="/alakhblog" element={<AlakhBlog />} />
+          <Route exact path="/ishitablog" element={<IshitaBlog />} />
+          <Route exact path="/pintublog" element={<PintuBlog />} />
+          <Route exact path="/adityablog" element={<AdityaBlog />} />
+          <Route exact path="/shashankblog" element={<ShashankBlog />} />
+          <Route exact path="/rishiblog" element={<RishiBlog />} />
           <Route
             exact
             path="/internationexposer"

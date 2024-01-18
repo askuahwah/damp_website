@@ -9,15 +9,19 @@ const AboutInfo = () => {
       </div>
       <div className={style.AboutInfo_details}>
         <p>
-          D-AMP stands for the Department Academic Mentorship Program. It
-          comprises of two D-AMP Coordinators that oversee the program for the
-          Civil Department and around thirty mentors. As the name suggests, we
-          help students in their academic endeavours by providing them personal
-          guidance and mentorship in order to smoothen their transition from
-          freshmen year to sophomore year. As the D-AMP team, we always
-          endeavour to go a step further and address the non academic and career
-          related concerns of our mentees in order to provide a holistic
-          mentorship experience.
+          The Civil DAMP team consists of over 30 mentors who serve to provide
+          active academic mentorship to sophomores in the department and bridge
+          the student-faculty gap which is crucial for academic reforms and long
+          term stability. While the primary perspective is ensuring academic
+          mentorship, in spirit we are a team that’s here to look out for you
+          and all your concerns. We’ve got a bunch of people here to ensure that
+          everyone in the Civil department has an opportunity to be their best,
+          and more importantly, realises these opportunities! This website aims
+          to provide you a one-stop platform for most things academic within the
+          department - course reviews to guide you before registration, project
+          and international exposures offered by the department, and also tips
+          to apply and prepare for higher education. We hope you make the most
+          of it!
         </p>
       </div>
     </div>

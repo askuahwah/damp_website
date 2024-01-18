@@ -7,7 +7,7 @@ const HigherStudiesContent = [
       institution: "University of Cambridge",
       admission_year: 2023,
       field: "EnvGeo",
-      specialization: "",
+      linkedin: "",
     },
   },
   {
@@ -17,8 +17,8 @@ const HigherStudiesContent = [
       degree: ["MS", "PhD"],
       institution: "Stanford University",
       admission_year: 2021,
-      field: "Mechanical Engineering",
-      specialization: "Numerical Analysis and Estimation",
+      field: "Mechanical Engineering (Numerical Analysis and Estimation)",
+      linkedin: ""
     },
   },
   {
@@ -29,7 +29,7 @@ const HigherStudiesContent = [
       institution: "Stanford University",
       admission_year: 2023,
       field: "Sustainable Design and Construction",
-      speacialization: "",
+      linkedin: "",
     },
   },
   {
@@ -39,8 +39,8 @@ const HigherStudiesContent = [
       degree: "MS",
       institution: "University of Southampton",
       admission_year: 2023,
-      field: "Maritime Engineering",
-      specialization: "Ocean Energy and Offshore Engineering",
+      field: "Maritime Engineering (Ocean Energy and Offshore Engineering)",
+      linkedin: "",
     },
   },
 
@@ -52,6 +52,7 @@ const HigherStudiesContent = [
       field: "Sustainable Urban Mobility Transitions",
       institution: "KTH/UPC",
       admission_year: 2022,
+      linkedin: ""
     },
   },
 ];

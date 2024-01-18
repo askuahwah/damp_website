@@ -2,21 +2,20 @@ import React, { useState } from "react";
 import style from "../course.module.css";
 import SecondCourse from "../../../data/CourseReviewData/Second";
 import CourseReview from "./CourseReview";
-import OneCourseDefaultData from "../../../data/CourseReviewData/Default";
 
 const Secondreview = () => {
   const uniqueCourseCodes = new Set();
 
-  const [selectedCourse, setSelectedCourse] = useState('');
+  const [selectedCourse, setSelectedCourse] = useState(
+    SecondCourse[0]["Course Code"]
+  );
 
   const handleCourseCodeClick = (courseCode) => {
     setSelectedCourse(courseCode);
   };
 
   const getCourseData = () => {
-    const allCourses = [
-      ...SecondCourse
-    ];
+    const allCourses = [...SecondCourse];
     return allCourses.filter(
       (review) => review["Course Code"] === selectedCourse
     );
@@ -47,9 +46,9 @@ const Secondreview = () => {
           </ul>
         </div>
       </div>
-      
+
       <div className={style.review_container}>
-        <CourseReview selectedCourse={getCourseData(OneCourseDefaultData)} />
+        <CourseReview selectedCourse={getCourseData()} />
       </div>
     </div>
   );

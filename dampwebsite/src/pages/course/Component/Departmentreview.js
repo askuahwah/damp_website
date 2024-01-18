@@ -7,7 +7,7 @@ import OneCourseDefaultData from "../../../data/CourseReviewData/Default";
 const Coursename = () => {
   const uniqueCourseCodes = new Set();
 
-  const [selectedCourse, setSelectedCourse] = useState('');
+  const [selectedCourse, setSelectedCourse] = useState(DepartmentElective[0]["Course Code"]);
 
   const handleCourseCodeClick = (courseCode) => {
     setSelectedCourse(courseCode);

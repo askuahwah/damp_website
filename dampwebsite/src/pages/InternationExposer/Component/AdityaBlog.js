@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import style from "../internation.module.css";
 
 const AdityaBlog = () => {
   return (
-    <div>
-      
+    <div className={style.aditya_main}>
+      <h1>Coming Soon</h1>
     </div>
   )
 }

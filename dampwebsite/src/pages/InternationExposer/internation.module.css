@@ -38,3 +38,63 @@
     box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 
                 -8px -8px 16px rgba(255, 255, 255, 0.8); /* Adjust as needed */
 }
+
+
+/* RishiBLog */
+
+.rishiblog_main {
+    padding: 5%;
+    padding-top: 1%;
+    text-align: justify;
+}
+
+.rishiblog_main p {
+    padding-top: 1%;
+}
+
+.rishiblog_main h2 {
+    padding-top: 2%;
+}
+
+.rishiblog_main ul{
+    padding-top: 1%;
+    padding-left: 4%;
+}
+
+.rishiblog_img {
+    margin-top: 2%;
+}
+
+.rishiblog_img img {
+    height: auto;
+    width: 70%;
+}
+
+/* Aditya Blog */
+
+.aditya_main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ShashankBlog */
+
+.shashankBlog_main {
+    padding: 5%;
+    padding-top: 1%;
+    text-align: justify;
+}
+
+.shashankBlog_main p{
+    padding-top: 1%;
+}
+
+.shashankBlog_main h2 {
+    margin-top: 2%;
+}
+
+
+
